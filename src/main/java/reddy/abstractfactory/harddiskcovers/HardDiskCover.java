@@ -54,5 +54,54 @@ public abstract class HardDiskCover {
     public void pack(){
         System.out.println("\nPackage of " + name + " ready");
     }
-    
+    public String toString(){
+        StringBuffer printer = new StringBuffer();
+        printer.append("--- " + name + "----- \n");
+        if(copper != null){
+            printer.append(copper);
+            printer.append("\n");
+        }
+        if(iron != null){
+            printer.append(iron);
+            printer.append("\n");
+        }
+        if(nickel != null){
+            printer.append(nickel);
+            printer.append("\n");
+        }
+        if(zinc != null){
+            printer.append(zinc);
+            printer.append("\n");
+        }
+        if(acrylic != null){
+            printer.append(acrylic);
+            printer.append("\n");
+        }     
+        if(nylon  != null){
+            printer.append(nylon);
+            printer.append("\n");
+        }
+        if(pvc  != null){
+            printer.append(pvc);
+            printer.append("\n");
+        }        
+        if(rtvSilicone  != null){
+            printer.append(rtvSilicone);
+            printer.append("\n");
+        }
+        if(altron != null ){
+            printer.append(altron);
+            printer.append("\n");
+        }
+        if(lucent != null ){
+            printer.append(lucent);
+            printer.append("\n");
+        }
+        if(renol != null ){
+            printer.append(renol);
+            printer.append("\n");
+        }   
+       
+        return printer.toString();
+    }      
 }
